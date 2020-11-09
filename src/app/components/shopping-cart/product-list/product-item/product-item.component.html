@@ -1,12 +1,10 @@
 <div class="card mb-4 shadow-sm">
-    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://ep01.epimg.net/elpais/imagenes/2019/10/16/escaparate/1571228804_383520_1571239551_sumario_normal.jpg" />
+    <img class="bd-placeholder-img card-img-top" width="100%" height="225" [src]="productItem.imageUrl" />
     <div class="card-body">
         <p class="cart-text">
-            <strong>{{  500 | currency:'MXN'}}</strong>
+            <strong>{{  productItem.price | currency:'MXN'}}</strong>
         </p>
-        <p class="card-text">Para conseguir orgasmos múltiples y más intensos
-            Satisfyer Pro 2 estimula el clítoris sin contacto, con ondas expansivas y pulsaciones excitantes para obtener un mayor placer
-            Para encender el dildo, solo tendrá que pulsar el botón inferior y más pequeño durante unos 2 segundos hasta que se haya activado el nivel más bajo de masaje en el Satisfyer Pro 2</p>
+        <p class="card-text">{{ productItem.description }}</p>
         <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-primary product-btn">Añadir al carrito</button>
